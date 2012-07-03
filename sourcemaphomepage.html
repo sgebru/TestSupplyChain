@@ -1,0 +1,3893 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://sourcemap.local/ -->
+<html lang="en" class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="The open directory of supply chains">
+      <meta name="keywords" content="carbon footprint, supply chain, life-cycle assessment, transparency, traceability, sustainable, green products">
+      <meta name="author" content="The Sourcemap Team">
+      
+      <meta http-equiv="content-language" content="en-us">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="shortcut icon" type="image/x-icon" href="http://sourcemap.local/assets/images/favicon.ico">
+      <link rel="apple-touch-icon" href="http://sourcemap.local/assets/images/favicon-large.png">
+      <link rel="image_src" href="http://sourcemap.local/assets/images/favicon-large.png">
+      <link rel="alternate" type="application/rss+xml" title="Sourcemap Blog Feed" href="http://blog.sourcemap.com/feed/">
+      <link rel="search" href="http://sourcemap.local/services/opensearch/" type="application/opensearchdescription+xml" title="Sourcemap.com">
+    <!--<base href="http://sourcemap.local/">--><base href=".">
+    <title>Sourcemap: where things come from</title>
+    <link rel="stylesheet" href="./sourcemaphomepage_files/reset.css" type="text/css">
+<link rel="stylesheet" href="./sourcemaphomepage_files/tokenizer.css" type="text/css">
+<link rel="stylesheet/less" href="./sourcemaphomepage_files/modal.less" type="text/css">
+<link rel="stylesheet/less" href="./sourcemaphomepage_files/general.less" type="text/css">
+<link rel="stylesheet/less" href="./sourcemaphomepage_files/slider.less" type="text/css"><style type="text/css" media="screen" id="less:sites-default-assets-styles-modal">#fade {
+  display: none;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  opacity: .80;
+  z-index: 9999;
+}
+.popup_block {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  border: 20px solid #ddd;
+  float: left;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  -webkit-box-shadow: 0px 0px 20px #000;
+  -moz-box-shadow: 0px 0px 20px #000;
+  box-shadow: 0px 0px 20px #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.popup_block .container {
+  width: auto;
+}
+img.btn_close {
+  float: right;
+  margin: -55px -55px 0 0;
+}
+.popup p {
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+.confirm_text {
+  font-size: 0.85em;
+  padding: 5px 0;
+}
+.confirm_button {
+  margin: 0px auto;
+  padding-top: 10px;
+  width: 366px;
+}
+.confirm_button .button {
+  margin-left: 10px;
+}
+</style><style type="text/css" media="screen" id="less:assets-styles-general">/* Copyright (C) Sourcemap 2011
+ * This program is free software: you can redistribute it and/or modify it under the terms
+ * of the GNU Affero General Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License along with this
+ * program. If not, see <http://www.gnu.org/licenses/>.*/
+/* Copyright (C) Sourcemap 2011
+ * This program is free software: you can redistribute it and/or modify it under the terms
+ * of the GNU Affero General Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License along with this
+ * program. If not, see <http://www.gnu.org/licenses/>.*/
+/*
+ * This is where our mixins live.
+ */
+/* Variables ---------------------- */
+/* Mixins --------------------------*/
+.superscript {
+  color: #328cbb;
+  font-size: .7em;
+}
+.plain_list {
+  list-style: none;
+  margin-left: 0;
+}
+.plain_list li {
+  padding: 0 0 20px;
+}
+.plain_list li img {
+  width: 40px;
+  float: left;
+  padding: 10px 15px 10px 0;
+}
+.plain_list li p {
+  color: #909090;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.editable_list {
+  font-size: 14px;
+  color: #949494;
+}
+.editable_list li {
+  margin: 0 0 8px 0;
+}
+.editable_list li p {
+  font-size: 1em;
+  width: 260px;
+  overflow: hidden;
+}
+.editable_list li p span {
+  color: #328cbb;
+}
+.editable_list li p span.empty {
+  color: #ccc;
+}
+.editable_list li a.edit-button {
+  float: right;
+  margin-right: -24px;
+  height: 24px;
+  width: 24px;
+  background: url('http://sourcemap.local/assets/styles/../images/edit-info.png') 0 -24px no-repeat;
+}
+.editable_list li a.edit-button.enabled {
+  background: url('http://sourcemap.local/assets/styles/../images/edit-info.png') 0 0 no-repeat;
+}
+.box {
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+.box.small {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+/* Functions ---------------------- */
+.clear {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+.center {
+  text-align: center;
+}
+.red {
+  color: red !important;
+}
+/* Debug/Profiler information ---------------- */
+#profiler {
+  margin-top: 10px;
+  display: none;
+}
+.profiler-link {
+  cursor: pointer;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  margin: 0 auto;
+  background: #ffffff url("http://sourcemap.local/assets/styles/../images/background.png") repeat-x;
+  color: #3c3c3c;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: .25em 0;
+  line-height: 1.4em;
+}
+h1.blue,
+h2.blue,
+h3.blue,
+h4.blue,
+h5.blue,
+h6.blue {
+  color: #4fa2cd;
+}
+h1.section-title,
+h2.section-title,
+h3.section-title,
+h4.section-title,
+h5.section-title,
+h6.section-title {
+  font-weight: normal;
+  font-size: 1.4em;
+  margin: 15px 0 12px 0;
+  color: #777;
+}
+h1.section-title span.secondary,
+h2.section-title span.secondary,
+h3.section-title span.secondary,
+h4.section-title span.secondary,
+h5.section-title span.secondary,
+h6.section-title span.secondary {
+  margin-left: 15px;
+  font-size: .8em;
+  color: #ccc;
+}
+h1.bad-news,
+h2.bad-news,
+h3.bad-news,
+h4.bad-news,
+h5.bad-news,
+h6.bad-news {
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #777;
+}
+h1 {
+  font-size: 32px;
+  text-shadow: 0 1px 1px white;
+}
+h2 {
+  font-size: 22px;
+  text-shadow: 0 1px 1px white;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 14px;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+ul {
+  list-style: none;
+  margin-left: 1em;
+}
+ul.bulleted {
+  list-style: square;
+}
+textarea:focus, input:focus {
+  outline: none;
+}
+hr {
+  border: 0;
+  height: 1px;
+  margin-top: 0;
+  color: #d4d4d4;
+  background-color: #d4d4d4;
+}
+hr.spacer {
+  height: 20px;
+  background: none;
+}
+hr.spacer.small {
+  height: 10px;
+}
+img a:hover {
+  border: 0;
+  vertical-align: middle;
+  text-underline: none;
+}
+a {
+  color: #2d78af;
+  text-decoration: none;
+}
+a:visited {
+  color: #2d78af;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.tooltip {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin: 0.5em 0.25em 0;
+  background: url(http://sourcemap.local/assets/styles/../images/icon-tooltip.png) no-repeat;
+}
+a.tooltip:hover {
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+/* Index featured-map slider */
+.anythingSlider .featured-teaser {
+  overflow: hidden;
+  max-height: 80px;
+}
+/* Structure ------------------------------------------------------- */
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -74px;
+}
+#footer {
+  height: 100px;
+}
+.push {
+  height: 90px;
+}
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container.wide {
+  width: 1020px;
+}
+.container.full {
+  width: 100%;
+}
+.container.full .status-messages {
+  cursor: auto;
+}
+.container.full .messages {
+  text-align: center;
+  margin: 0;
+}
+#page-title {
+  margin-bottom: 2em;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  color: #4fa2cd;
+  line-height: 1.4em;
+  background-color: #fff;
+  background-color: #efefef;
+  background-image: -moz-linear-gradient(center bottom, #efefef 0%, #ffffff 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efefef), color-stop(1, #ffffff));
+}
+#main {
+  width: auto;
+}
+#main .container {
+  width: auto;
+}
+#main .secondary {
+  background: url("http://sourcemap.local/assets/styles/../images/secondary_background.jpg") top left no-repeat;
+}
+#main .secondary ul {
+  list-style: none;
+  margin-left: 0;
+}
+#main .secondary ul li {
+  padding: 0 0 20px;
+}
+#main .secondary ul li img {
+  width: 40px;
+  float: left;
+  padding: 10px 15px 10px 0;
+}
+#main .secondary ul li p {
+  color: #909090;
+  font-size: 0.8em;
+  font-style: italic;
+}
+#main .secondary a {
+  color: #3c3c3c;
+  font-weight: normal;
+}
+#main.sidebar {
+  float: left;
+  width: 520px;
+}
+#main.sidebar .container {
+  padding-right: 20px;
+}
+#sidebar-left {
+  float: left;
+  width: 640px;
+}
+#sidebar-left .container {
+  padding-right: 20px;
+}
+#sidebar {
+  float: right;
+  width: 400px;
+  position: relative;
+  margin-bottom: 60px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+#sidebar .container {
+  width: auto;
+  padding: 0 20px;
+}
+#sidebar.small {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+#sidebar ul {
+  margin-left: 0;
+}
+#sidebar.skinny {
+  width: 272px;
+}
+#sidebar.browse {
+  margin-right: 40px;
+}
+#sidebar.profile {
+  -webkit-box-shadow: 0 0 0 0;
+  -moz-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+  border: none;
+  background: none;
+  width: 340px;
+}
+#sidebar.profile p {
+  margin: 10px 0 ;
+  font-size: 2em;
+  color: #ccc;
+}
+/* Error and Status Messages ---------------------------------------- */
+.messages {
+  margin: 20px 0;
+}
+.messages .status-messages {
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0;
+  display: none;
+}
+.messages .status-messages .status-message {
+  color: #fff;
+  padding: 8px 0 10px;
+  text-shadow: -1px 0px 1px #255a76;
+  line-height: 1.5em;
+  background-color: #fff;
+  background-color: #3884ab;
+  background-image: -moz-linear-gradient(center bottom, #3884ab 0%, #4f9fc9 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3884ab), color-stop(1, #4f9fc9));
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.messages .status-messages .status-message.browser {
+  font-size: 20px;
+  color: #999;
+  text-shadow: none;
+  padding: 20px 30px 40px 30px;
+  background-color: #fff;
+  background-color: #eeeeee;
+  background-image: -moz-linear-gradient(center bottom, #eeeeee 0%, #ffffff 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(1, #ffffff));
+}
+.messages .status-messages .status-message.browser h1 {
+  color: #333333;
+}
+.messages .status-messages .status-message.announcement {
+  padding: 4px 0 6px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.messages .status-messages .status-message.announcement .status-wrap {
+  background: none;
+}
+.messages .status-messages .status-message a {
+  color: #fff;
+  text-decoration: underline;
+}
+.messages .status-messages .status-wrap {
+  background: url('http://sourcemap.local/assets/styles/../images/close.png') right 4px transparent no-repeat;
+  margin: 0 20px 0 20px;
+}
+/* Header ---------------------------------------- */
+#header {
+  margin: 0 auto 20px;
+  padding-top: 28px;
+  height: 55px;
+}
+#header #logo {
+  float: left;
+}
+#header #logo h1 {
+  display: none;
+}
+#header #logo img {
+  width: 223px;
+  height: 56px;
+}
+#header #navigation, #header #search {
+  margin-top: 10px;
+}
+#header #navigation {
+  float: right;
+  list-style: none;
+  max-width: 335px;
+}
+#header #navigation li {
+  font-size: 17px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  margin: 12px 24px 12px 5px;
+  position: relative;
+}
+#header #navigation li a {
+  text-shadow: #d1d1d1 1px 1px 1px;
+  color: #444;
+}
+#header #navigation li a.upgrade-text {
+  position: absolute;
+  top: -9px;
+  right: -38px;
+  color: #328cbb;
+  font-size: .5em;
+  text-shadow: none;
+}
+#header #navigation li.register {
+  margin: -5px 15px;
+}
+#header #navigation li.register a {
+  text-decoration: none;
+  color: #f7f7f7;
+  text-shadow: none;
+  display: block;
+}
+#header #navigation li #existing-login {
+  font-weight: normal;
+  font-size: 0.65em;
+  text-shadow: none;
+  text-decoration: none;
+  color: #7a7a7a;
+}
+#header #navigation li #existing-login:hover {
+  color: #4d4d4d;
+}
+/* Footer ---------------------------------------- */
+#footer {
+  background-color: #454647;
+  border-top: 1px solid #ccc;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 -1px -1px #353637;
+  padding: 0;
+}
+#footer .container .logo_bcorp {
+  background: url("http://sourcemap.local/assets/styles/../images/logo-footer-bcorp.png") top right no-repeat;
+  background-size: 60px;
+  width: 60px;
+  height: 90px;
+  float: right;
+  position: relative;
+  bottom: 65px;
+  margin-right: 15px;
+}
+#footer .container .logo_ecolabel {
+  background: url("http://sourcemap.local/assets/styles/../images/logo-footer-ecolabel.png") top right no-repeat;
+  background-size: 120px;
+  width: 120px;
+  height: 30px;
+  float: right;
+  position: relative;
+  bottom: 45px;
+}
+#footer ul {
+  margin-top: 20px;
+  margin-left: 0;
+  list-style: none;
+}
+#footer ul li {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  border-right: 1px solid #4b4c4d;
+}
+#footer ul li.last {
+  border: none;
+}
+#footer p {
+  margin-top: 0.5em;
+  clear: both;
+  color: #999;
+  font-size: 0.7em;
+}
+#footer a {
+  color: #7f7f7f;
+}
+/* Live Search ------------- */
+#search-div {
+  margin: 10px 0 0 48px;
+}
+#search-div input {
+  width: 310px;
+  background: url("http://sourcemap.local/assets/styles/../images/search.png") 12px center no-repeat;
+}
+#search-results {
+  border: 1px solid #ddd;
+  background: #fff;
+  z-index: 999;
+  display: none;
+  width: 356px;
+  line-height: 26px;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+#search-results ul {
+  margin: 0;
+}
+#search-results ul li {
+  float: left;
+  width: 100%;
+}
+#search-results ul li:hover {
+  background: #eaeaea;
+  cursor: pointer;
+}
+#search-results ul li .preview-map-item {
+  overflow: visible;
+}
+#search-results ul li .search-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#search-results ul li .preview-title a:hover {
+  text-decoration: none;
+}
+#search-results ul li .preview-badge {
+  padding: 5px;
+  float: left;
+  overflow: hidden;
+}
+#search-results ul li.more {
+  font-size: 0.8em;
+  clear: both;
+  text-transform: lowercase;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+#search-results ul li.more a:hover {
+  text-decoration: none;
+}
+#search-results ul li.search-category {
+  border-bottom: 1px solid #ddd;
+}
+#search-results ul li.search-category .section-title {
+  margin: 5px;
+}
+#search-results ul li.search-category:hover {
+  background: #fff;
+  cursor: auto;
+}
+/* Form styles -------------------------------------------------------------- */
+fieldset {
+  padding: 10px;
+}
+fieldset.pro {
+  border: 2px #bbbbbb solid;
+}
+legend {
+  color: #338DB7;
+}
+label {
+  float: left;
+  padding: 10px 0 5px 0;
+  display: block;
+  color: #666;
+}
+.sourcemap-form-error {
+  font-weight: bold;
+  float: right;
+  padding: 10px 0 5px 0;
+  color: #888;
+}
+input[type=text], input[type=password], textarea {
+  width: 98%;
+  height: 100%;
+  padding: 2% 1%;
+  font-size: 0.8em;
+  background: #fff;
+  border: 1px solid #C9C9C9;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-box-shadow: 0 3px 12px #eeeeee inset;
+  -moz-box-shadow: 0 3px 12px #eeeeee inset;
+  box-shadow: 0 3px 12px #eeeeee inset;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus,
+input[type=text]:hover,
+input[type=password]:hover,
+textarea:hover {
+  background-color: #FBF7D5;
+}
+input[type=text]:disabled, input[type=password]:disabled, textarea:disabled {
+  background: #ddd;
+}
+input[type=text]:disabled:focus,
+input[type=password]:disabled:focus,
+textarea:disabled:focus,
+input[type=text]:disabled:hover,
+input[type=password]:disabled:hover,
+textarea:disabled:hover {
+  background-color: auto;
+}
+input::-webkit-input-placeholder, input:-moz-placeholder {
+  color: #999999;
+}
+textarea {
+  height: 55px;
+}
+.counter {
+  float: right;
+  padding: 10px 5px 5px 0;
+  display: block;
+  color: #888;
+}
+div.half-width {
+  float: left;
+  width: 30%;
+  padding: 0 2% 0 1%;
+}
+div.half-width input {
+  margin-top: 2px;
+  height: 19px;
+}
+.cvc-code input {
+  width: 50px;
+  float: left;
+  padding-left: 10px;
+}
+.sourcemap-form-button {
+  width: 100%;
+  border: none;
+  background: none;
+}
+.button, input[type=submit] {
+  padding: .5em 1em;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  color: #f7f7f7;
+  background-color: #fff;
+  background-color: #246587;
+  background-image: -moz-linear-gradient(center bottom, #246587 0%, #50a3ce 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #246587), color-stop(1, #50a3ce));
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button:hover,
+input[type=submit]:hover,
+.button.disabled,
+input[type=submit].disabled {
+  color: #f7f7f7;
+  background-color: #fff;
+  background-color: #024365;
+  background-image: -moz-linear-gradient(center bottom, #024365 0%, #024365 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #024365), color-stop(1, #024365));
+}
+.button.alternate, input[type=submit].alternate {
+  font-size: 11px;
+  font-weight: normal;
+  width: 100px;
+  border: 1px solid #d4d4d4;
+  color: #328cbb;
+  background-color: #fff;
+  background-color: rgba(245, 245, 245, 0.85);
+  background-image: -moz-linear-gradient(center bottom, rgba(245, 245, 245, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(245, 245, 245, 0.85)), color-stop(1, rgba(255, 255, 255, 0.85)));
+}
+.button.alternate a, input[type=submit].alternate a {
+  color: #328cbb;
+}
+.button.alternate.confirm, input[type=submit].alternate.confirm {
+  background-color: #fff;
+  background-color: #245687;
+  background-image: -moz-linear-gradient(center bottom, #245687 0%, #328cbb 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #245687), color-stop(1, #328cbb));
+  color: #f7f7f7;
+}
+input[type=submit] {
+  min-width: 118px;
+  border: none;
+  float: right;
+}
+div.submit-status {
+  float: left;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+div.submit-status.active {
+  background: url("http://sourcemap.local/assets/styles/../images/throbber.gif") 8px 8px no-repeat;
+}
+div.submit-status.succeeded {
+  background: url("http://sourcemap.local/assets/styles/../images/account-notice.png") 12px 13px no-repeat;
+}
+div.submit-status.action-required {
+  background: url("http://sourcemap.local/assets/styles/../images/account-question.png") 12px 13px no-repeat;
+}
+div.submit-status.failed {
+  background: url("http://sourcemap.local/assets/styles/../images/account-alert.png") 12px 13px no-repeat;
+}
+div.submit-status.text {
+  padding-left: 40px;
+  width: 225px;
+  color: #999;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+div.submit-status.text ul {
+  margin: .75em 0 0 .2em;
+}
+div.submit-status.text a {
+  color: #4D98CF;
+}
+select {
+  border: 1px solid #c9c9c9;
+  padding: 2%;
+  color: #666;
+  font-size: 0.8em;
+  width: 100% ;
+  line-height: 1.3em;
+  background: url("http://sourcemap.local/assets/styles/../images/dropdown.png") right center no-repeat, -moz-linear-gradient(center bottom, #cccccc 0%, #ffffff 100%) 0 0 repeat;
+  background: url("http://sourcemap.local/assets/styles/../images/dropdown.png") right center no-repeat, -webkit-gradient(linear, left bottom, left top, color-stop(0, #cccccc), color-stop(1, #ffffff));
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+select:disabled {
+  background: #ddd;
+}
+input[type=file] {
+  width: 100%;
+}
+input[type=checkbox] {
+  width: auto;
+  margin: 12px 12px 7px;
+}
+/* register.php specific stuff */
+#recaptcha_response_field {
+  height: 15px;
+  float: left;
+}
+#recaptcha_area {
+  margin: 25px 0 10px;
+  width: 440px;
+}
+.recaptchatable {
+  clear: both;
+}
+#recaptcha_widget_div {
+  clear: both;
+}
+input[name="email_confirm"], label[for="email_confirm"] {
+  display: none;
+}
+.pseudo-form {
+  background: #ffffff url("http://sourcemap.local/assets/styles/../images/shadow.png") top repeat-x;
+  border: 1px solid #c9c9c9;
+  float: left;
+  height: 42px;
+  margin-bottom: 15px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.pseudo-form input {
+  margin-top: 10px;
+  width: 290px;
+  padding: 4px 10px 4px 36px;
+  border: 0;
+  font-size: 12px;
+  outline: none;
+  -webkit-appearance: none;
+  background: url("http://sourcemap.local/assets/styles/../images/search.png") 12px center no-repeat;
+  color: #999;
+}
+.pseudo-form input:hover {
+  color: #444;
+  cursor: text;
+}
+.pseudo-form input.link {
+  background: url("http://sourcemap.local/assets/styles/../images/icon-link.png") 6px center no-repeat;
+}
+.pseudo-form input.embed {
+  background: url("http://sourcemap.local/assets/styles/../images/icon-embed.png") 6px center no-repeat;
+}
+.share-pseudo {
+  float: left;
+  height: 52px;
+  margin-bottom: 15px;
+}
+.share-pseudo a {
+  color: #999;
+}
+.share-pseudo .linkbox {
+  margin-top: 5px;
+  width: 290px;
+  padding: 4px 10px 4px 40px;
+  border: 0;
+  font-size: 12px;
+  color: #999;
+}
+.share-pseudo .earth {
+  background: url("http://sourcemap.local/assets/styles/../images/little-earth.png") 12px center no-repeat;
+}
+.share-pseudo .xls {
+  background: url("http://sourcemap.local/assets/styles/../images/icon-xls.png") 12px center no-repeat;
+}
+.collapsed {
+  display: none;
+}
+.expander {
+  display: block;
+  padding-bottom: 20px;
+}
+.receipt h2 {
+  border-bottom: 1px solid #eee;
+}
+.receipt ul {
+  float: left;
+  width: 50%;
+  color: #999;
+}
+.receipt ul li {
+  margin-bottom: 10px;
+}
+.receipt ul.labels {
+  width: 38%;
+  text-align: center;
+}
+div.token-input {
+  float: left;
+  height: 50px;
+}
+div.token-input input {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
+}
+div.token-input input:hover {
+  background: none;
+}
+/* Map View  ----------------------------------- */
+#map-secondary {
+  margin: 20px auto;
+}
+#map-secondary .author {
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+#map-secondary .author img {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#map-secondary p.description {
+  font-size: 16px;
+  line-height: 1.2em;
+  margin: 5px 0 10px 0;
+  color: #666;
+}
+#map-secondary .description-video {
+  width: 480px;
+  padding: 10px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+#map-secondary .map-title {
+  font-size: 24px;
+  line-height: 1.2em;
+  float: left;
+}
+ul.tags {
+  margin: 0 0 0 0;
+  padding: 0;
+  display: inline;
+}
+ul.tags li {
+  line-height: 2.5em;
+  font-size: 10px;
+  border-radius: 4px;
+  color: #999;
+  margin: 5px 5px 5px 0;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  display: inline;
+}
+#map-edit-button {
+  margin: 10px 0;
+  display: block;
+  width: auto;
+}
+#discussion-section {
+  width: 505px;
+  min-height: 110px;
+  padding: 20px 20px 0 0;
+  background: url("http://sourcemap.local/assets/styles/../images/secondary_background.jpg") top left no-repeat;
+}
+#discussion-section h2.section-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#discussion-section #comments {
+  list-style: none;
+  padding: 10px 0 0 0;
+  margin: 10px 0 0 0;
+  border-top: 1px solid #eee;
+}
+#discussion-section #comments .comment {
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #eee;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 50px;
+  overflow: hidden;
+}
+#discussion-section #comments .comment .user-avatar {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  vertical-align: middle;
+}
+#discussion-section #comment-form {
+  width: 462px;
+}
+#discussion-section #comment-form #comment-area {
+  width: 485px;
+  padding: 10px;
+  font-size: inherit;
+  font-family: inherit;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #999;
+}
+#discussion-section #comment-form #comment-area:focus {
+  outline: none;
+}
+#discussion-section #comment-form fieldset {
+  padding: 0;
+}
+#discussion-section #comment-submit {
+  float: right;
+}
+/* Welcome Styles  --------------------------------------------------------- */
+h1#site-tagline {
+  font-size: 30px;
+}
+.container.slider {
+  width: 100%;
+  height: 380px;
+  position: relative;
+}
+#sliderwrap {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  overflow: hidden;
+  background: url('http://sourcemap.local/assets/styles/../images/slider-bg.png') top no-repeat;
+  height: 362px;
+}
+#sliderwrap #slider {
+  padding: 16px 4px 4px 4px;
+}
+#sliderwrap #slider .featured-preview-map.large {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+#sliderwrap #slider .anythingWindow {
+  -webkit-mask-box-image: url('http://sourcemap.local/assets/styles/../images/slider-mask.png') top no-repeat;
+}
+#sliderwrap #slider .anythingWindow ul {
+  list-style: none;
+}
+#sliderwrap #slider .preview-icons {
+  position: absolute;
+  right: 32px;
+  bottom: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #222;
+}
+#sliderwrap #slider .preview-icons div {
+  width: 32px;
+  padding: 8px 0 6px 0;
+  float: right;
+  text-align: center;
+  opacity: .3;
+}
+#sliderwrap #slider .preview-icons div.favorited {
+  background: url(http://sourcemap.local/assets/styles/../images/icon-slider-favorited.png) center no-repeat;
+}
+#sliderwrap #slider .preview-icons div.discussed {
+  background: url(http://sourcemap.local/assets/styles/../images/icon-slider-discussed.png) center no-repeat;
+}
+.preview-map-item {
+  float: left;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+.preview-map-item.last {
+  margin-right: 0;
+}
+.preview-map-item.browse {
+  margin: 10px 0;
+}
+.preview-map-item.browse .preview-icons {
+  right: 18px;
+}
+.preview-map-item.small {
+  width: 170px;
+  height: 137px;
+}
+.preview-map-item.small img {
+  width: 168px;
+  height: 98px;
+}
+.preview-map-item.medium {
+  width: 240px;
+  height: 180px;
+}
+.preview-map-item.medium img {
+  width: 238px;
+  height: 138px;
+}
+.preview-map-item .preview-map {
+  background: #fff;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.preview-map-item .preview-map:hover {
+  border-color: #999;
+}
+.preview-map-item .preview-title, .preview-map-item .preview-author {
+  margin-left: 4px;
+  font-weight: normal;
+  height: 1.2em;
+  overflow: hidden;
+}
+.preview-map-item .preview-title.featured,
+.preview-map-item .preview-author.featured,
+.preview-map-item .preview-title.carousel,
+.preview-map-item .preview-author.carousel {
+  width: 230px;
+}
+.preview-map-item .preview-title {
+  line-height: 1em;
+  margin-bottom: 0;
+}
+.preview-map-item .preview-author {
+  float: left;
+  font-size: 0.7em;
+  font-style: italic;
+  color: #888;
+  margin: 0 5px 10px;
+}
+.preview-map-item .preview-author a {
+  color: #888;
+  text-decoration: underline;
+}
+.preview-map-item .preview-teaser {
+  margin-top: 0;
+  font-size: 0.8em;
+}
+.preview-map-item .preview-icons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.preview-map-item .preview-icons div {
+  padding-top: 2px;
+  width: 20px;
+  height: 18px;
+  float: right;
+  text-align: center;
+}
+.preview-map-item .preview-icons div.favorited {
+  background: url(http://sourcemap.local/assets/styles/../images/icon-preview-favorited.png) center no-repeat;
+}
+.preview-map-item .preview-icons div.discussed {
+  background: url(http://sourcemap.local/assets/styles/../images/icon-preview-discussed.png) center no-repeat;
+}
+.preview-map-item img.thumb {
+  width: 80px;
+  height: 44px;
+}
+.preview-map-item img.small {
+  width: 168px;
+  height: 106px;
+}
+.preview-map-item img.medium {
+  width: 220px;
+  height: 128px;
+}
+.preview-map-item img.large {
+  width: 710px;
+  height: 320px;
+}
+.preview-map-item.vertical .preview-map {
+  float: left;
+}
+.preview-map-item.vertical .preview-title {
+  margin: 10px 0;
+}
+ul li.news-item .title {
+  float: left;
+}
+ul li.news-item .date {
+  float: right;
+  margin: 7px 2px 0 0;
+  color: #aaa;
+  font-weight: normal;
+  font-size: .7em;
+}
+ul li.news-item p {
+  height: 55px;
+  width: 508px;
+  overflow: hidden;
+  position: relative;
+}
+/* Browse page --------- */
+#category-list {
+  margin-bottom: 1em;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  line-height: 1.4em;
+  background-color: #fff;
+  background-color: #efefef;
+  background-image: -moz-linear-gradient(center bottom, #efefef 0%, #ffffff 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efefef), color-stop(1, #ffffff));
+}
+#category-list #category-list-content {
+  padding: 0 10px;
+}
+#category-list #category-list-content .category-current {
+  padding-top: 6px;
+  float: left;
+}
+#category-list #category-list-content .category-current a {
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+}
+#category-list #category-list-content .category-current a.last {
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+}
+#category-list #category-list-content .category-pager {
+  text-align: center;
+  padding-top: 6px;
+}
+#category-list #category-list-content .category-pager a {
+  border-left: none;
+}
+#category-list #category-list-content .category-pager p {
+  line-height: 1.4em;
+}
+#category-list #category-list-content .category-dropdown {
+  float: right;
+  width: 285px;
+}
+.category-view {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.category-view ul {
+  margin-left: 0;
+}
+.category-view ul.nocarousel {
+  width: 940px;
+  padding: 15px 40px;
+}
+.category-view .section-title {
+  margin: 10px 0 0 40px;
+}
+#category-pagination {
+  padding: 5px;
+  line-height: 1.4em;
+  text-align: center;
+  padding-top: 6px;
+}
+#category-pagination a {
+  border-left: none;
+}
+#category-pagination p {
+  line-height: 1.4em;
+}
+/* Dashboard ----------------------------------------------------- */
+.account-alert {
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  background-color: #fff;
+  background-color: #f9f0a9;
+  background-image: -moz-linear-gradient(center bottom, #f9f0a9 0%, #faf6da 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f9f0a9), color-stop(1, #faf6da));
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ecebdf;
+}
+.account-alert p {
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  background: url(http://sourcemap.local/assets/styles/../images/account-alert.png) 6px 5px transparent no-repeat;
+  padding: 5px 10px 5px 45px;
+}
+.account-alert.question p {
+  background: url(http://sourcemap.local/assets/styles/../images/account-question.png) 6px 5px transparent no-repeat;
+}
+.account-alert.notice p {
+  background: url(http://sourcemap.local/assets/styles/../images/account-notice.png) 6px 5px transparent no-repeat;
+}
+.dashboard-top {
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+.dashboard-top.small {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+.dashboard-top .user-options {
+  float: right;
+  margin: 24px 0 20px 0;
+}
+.dashboard-top .user-options .user-option {
+  padding: 0 15px 1px 15px;
+  float: right;
+}
+.dashboard-top .user-options .user-option.settings {
+  background: url(http://sourcemap.local/assets/styles/../images/icon_setting.png) left no-repeat transparent;
+}
+.dashboard-top .user-options .user-option.message {
+  background: url(http://sourcemap.local/assets/styles/../images/icon_message.png) left no-repeat transparent;
+}
+.dashboard-top .user-options a {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #777;
+  cursor: pointer;
+  text-decoration: none;
+}
+.dashboard-top .left {
+  width: 650px;
+  float: left;
+}
+.dashboard-top .left .container {
+  width: auto;
+  margin: 0 20px;
+}
+.dashboard-top .left .user-name {
+  margin-left: 20px;
+}
+.dashboard-top .left .preview-link {
+  font-size: 0.5em;
+  margin-left: 2em;
+}
+.dashboard-top .right {
+  float: right;
+  width: 270px;
+  margin: 0 30px 0 0;
+}
+.dashboard-top .right .container {
+  width: auto;
+}
+.dashboard-top .right #user-stream .date {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #999;
+}
+.dashboard-top .right #user-stream .user-event .event {
+  font-size: 0.8em;
+}
+.dashboard-top .right #user-stream .user-event p {
+  margin-left: 15px;
+  font-size: 0.8em;
+}
+#user-profile {
+  background: #fff;
+  padding: 10px;
+  width: 590px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+#user-profile .user-avatar {
+  float: left;
+}
+#user-profile .user-avatar img {
+  width: 128px;
+  height: 128px;
+}
+#user-profile .user-details {
+  float: right;
+  width: 400px;
+  padding-top: 20px;
+  padding-right: 30px;
+  font-size: 14px;
+  color: #949494;
+}
+#user-profile .user-details li {
+  margin: 0 0 8px 0;
+}
+#user-profile .user-details li p {
+  font-size: 1em;
+  width: 260px;
+  overflow: hidden;
+}
+#user-profile .user-details li p span {
+  color: #328cbb;
+}
+#user-profile .user-details li p span.empty {
+  color: #ccc;
+}
+#user-profile .user-details li a.edit-button {
+  float: right;
+  margin-right: -24px;
+  height: 24px;
+  width: 24px;
+  background: url('http://sourcemap.local/assets/styles/../images/edit-info.png') 0 -24px no-repeat;
+}
+#user-profile .user-details li a.edit-button.enabled {
+  background: url('http://sourcemap.local/assets/styles/../images/edit-info.png') 0 0 no-repeat;
+}
+#user-profile .user-details.pro_user_badge {
+  width: 300px;
+  padding-right: 0px;
+}
+#user-profile .user-details li {
+  min-height: 16px;
+  color: #333;
+}
+#user-profile .user-details p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.4em;
+}
+#user-profile .user-details .detail_cap {
+  width: 100px;
+  color: #949494;
+  float: left;
+  font-size: 10px;
+}
+#user-profile .user-details #display_name, #user-profile .user-details #username {
+  width: 200px;
+}
+.payment {
+  margin: 10px auto;
+  border-top: 1px solid #d4d4d4;
+  color: #888;
+}
+.payment .container {
+  padding: 20px 20px 20px 50px;
+  background: url(http://sourcemap.local/assets/styles/../images/icon-receipt.png) left no-repeat transparent;
+}
+/* Channel ---------------------------------- */
+#upgrade-list {
+  list-style: none;
+}
+#upgrade-list li {
+  padding: 3px 0 3px 34px;
+  background: url("http://sourcemap.local/assets/styles/../images/blank.gif") 0 0 no-repeat;
+}
+#upgrade-list li.lock {
+  background-image: url("http://sourcemap.local/assets/styles/../images/icon-padlock.png");
+}
+#upgrade-list li.tag {
+  background-image: url("http://sourcemap.local/assets/styles/../images/icon-tag.png");
+}
+#upgrade-list li.key {
+  background-image: url("http://sourcemap.local/assets/styles/../images/icon-key.png");
+}
+#upgrade-list li.support {
+  background-image: url("http://sourcemap.local/assets/styles/../images/icon-support.png");
+}
+.channel-banner {
+  width: 100%;
+  text-align: center;
+  height: 120px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+.channel-banner.small {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+.channel-banner img {
+  height: auto;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.channel-featured-maps {
+  float: left;
+  margin: 20px 20px 20px 0;
+  width: 500px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+.channel-featured-maps.small {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+.channel-featured-maps #featured-slider-description {
+  position: absolute;
+  padding: 20px;
+  right: 44px;
+  top: 35px;
+  width: 190px;
+  height: 136px;
+  border-top: 3px #549ec5 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.channel-featured-maps #featured-slider-description h1 {
+  font-size: 20px;
+}
+.channel-featured-maps #featured-slider-description h2 {
+  font-size: 16px;
+}
+.channel-featured-maps #featured-slider-description h4 {
+  font-size: 12px;
+}
+.channel-featured-maps #featured-slider-description h4.featured-info a {
+  font-size: 12px;
+}
+.channel-featured-maps #featured-slider-description .preview-icons {
+  position: absolute;
+  right: 12px;
+  bottom: 9px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #222;
+}
+.channel-featured-maps #featured-slider-description .preview-icons div {
+  width: 20px;
+  padding: 8px 0 6px 0;
+  float: right;
+  text-align: center;
+  opacity: .3;
+}
+.channel-featured-maps #featured-slider-description .preview-icons div.favorited {
+  background: url(http://sourcemap.local/assets/styles/../images/icon-slider-favorited.png) center no-repeat;
+  background-size: 22px;
+}
+.channel-featured-maps #featured-slider-description .preview-icons div.discussed {
+  background: url(http://sourcemap.local/assets/styles/../images/icon-slider-discussed.png) center no-repeat;
+  background-size: 22px;
+}
+.channel-featured-maps #channel-featured-teaser {
+  padding: 20px;
+}
+.channel-featured-maps .anythingSlider .anythingControls {
+  position: absolute;
+  bottom: 12px;
+  left: 300px;
+  z-index: 100;
+}
+.channel-featured-maps ul {
+  list-style: none;
+}
+.channel-featured-maps ul img {
+  width: auto;
+  height: auto;
+}
+.channel-other-maps {
+  float: right;
+  width: 400px;
+}
+.channel-other-maps li {
+  float: left;
+}
+.channel-other-maps .user-map-list {
+  margin-top: 5px;
+}
+.channel-other-maps .user-map-list .map-description {
+  width: 200px;
+}
+.channel-featured-badge {
+  float: left;
+  width: 500px;
+}
+.channel-left {
+  float: left;
+  width: 500px;
+}
+/* User Mesages --------------------------- */
+.user-message {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #d4d4d4;
+  padding-top: 10px;
+  height: auto;
+}
+.user-message .user-message-img-outer {
+  float: left;
+}
+.user-message .user-message-img-outer .user-message-img {
+  padding: 10px 5px 5px 5px;
+  width: 64px;
+  height: 64px;
+}
+.user-message .user-message-container {
+  width: 700px;
+  float: left;
+  padding: 5px;
+  height: auto;
+}
+.user-message .user-message-container .user-message-username {
+  padding: 5px;
+}
+.user-message .user-message-container .user-message-username a, .user-message .user-message-container .user-message-username .arrow {
+  float: left;
+}
+.user-message .user-message-container .user-message-username .arrow {
+  background: url("http://sourcemap.local/assets/styles/../images/arrow.png") no-repeat;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  margin: 4px 10px;
+  clear: none;
+}
+.user-message .user-message-container .user-message-body {
+  font-size: 0.8em;
+  color: gray;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.user-message .user-message-option {
+  float: right;
+  padding: 25px 0 25px 0;
+  font-size: 0.8em;
+}
+/* Send message dialog -------------------- */
+.send-msg td, .send-msg th {
+  padding-top: 5px;
+}
+.send-msg .label {
+  vertical-align: top;
+  color: #666;
+  padding-right: 10px;
+  text-align: right;
+  width: 75px;
+}
+.send-msg textarea {
+  vertical-align: top;
+  resize: none;
+  border-color: #6D84B4;
+  outline: none;
+  overflow-y: auto !important;
+  -webkit-animation: none;
+  height: 30px;
+  width: 405px;
+  max-height: 280px;
+}
+.send-msg input[type="button"] {
+  float: right;
+}
+.send-msg .counter {
+  position: absolute;
+  top: 97px;
+}
+/* Lists ---------------------------------- */
+.user-map-list {
+  font-size: 0.8em;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 1px solid #d4d4d4;
+}
+.user-map-list .map-item {
+  float: left;
+  padding: 4px;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  margin-right: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.user-map-list .map-description {
+  float: left;
+  width: 420px;
+  color: #909090;
+  font-size: 15px;
+  font-weight: normal;
+}
+.user-map-list .map-description .map-details {
+  margin: 0 0 0 0;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 13px;
+}
+.user-map-list .map-description .map-teaser {
+  clear: left;
+}
+.user-map-list .map-controls {
+  float: right;
+  text-align: right;
+  width: 330px;
+}
+.user-map-list .map-controls div {
+  float: right;
+  margin-left: 7px;
+  border: 1px solid #d7d7d7;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: rgba(245, 245, 245, 0.85);
+  background-image: -moz-linear-gradient(center bottom, rgba(245, 245, 245, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(245, 245, 245, 0.85)), color-stop(1, rgba(255, 255, 255, 0.85)));
+}
+.user-map-list .map-controls div.map-controls-publish, .user-map-list .map-controls div.map-controls-featured {
+  background: #f8f8f8;
+  border: 1px solid #bfbfbf;
+  width: 120px;
+}
+.user-map-list .map-controls div.map-controls-publish input,
+.user-map-list .map-controls div.map-controls-featured input,
+.user-map-list .map-controls div.map-controls-publish a,
+.user-map-list .map-controls div.map-controls-featured a {
+  float: left;
+}
+.user-map-list .map-controls div.map-controls-publish input, .user-map-list .map-controls div.map-controls-featured input {
+  margin: 12px 9px 0;
+}
+.user-map-list .map-controls div.map-controls-publish a, .user-map-list .map-controls div.map-controls-featured a {
+  cursor: pointer;
+  text-decoration: none;
+  border-left: 1px solid #d7d7d7;
+  color: #777a7e;
+}
+.user-map-list .map-controls div.map-controls-publish.channel, .user-map-list .map-controls div.map-controls-featured.channel {
+  float: left;
+}
+.user-map-list .map-controls div.map-controls-passcode {
+  float: left;
+  margin-top: 10px;
+  background: #f8f8f8;
+  border: 1px solid #bbbbbb;
+  width: 249px;
+  max-height: 36px;
+  overflow: hidden;
+}
+.user-map-list .map-controls div.map-controls-passcode input, .user-map-list .map-controls div.map-controls-passcode a {
+  float: left;
+}
+.user-map-list .map-controls div.map-controls-passcode input {
+  margin: 12px 9px 0;
+}
+.user-map-list .map-controls div.map-controls-passcode a {
+  cursor: pointer;
+  text-decoration: none;
+  border-left: 1px solid #d7d7d7;
+  color: #777a7e;
+}
+.user-map-list .map-controls div.map-controls-passcode input[type="submit"] {
+  min-width: 75px;
+}
+.user-map-list .map-controls div.map-controls-passcode #map-passcode-input {
+  margin-top: 7px;
+  width: 100px;
+}
+.user-map-list .map-controls div a {
+  padding: 10px 12px;
+  display: block;
+  color: #328cbb;
+  font-weight: bold;
+}
+.user-map-list .map-controls span.map-controls-status {
+  float: right;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  background: url("http://sourcemap.local/assets/styles/../images/throbber.gif") 8px 8px no-repeat;
+}
+.user-map-list .map-controls span.map-controls-status.succeeded {
+  background: url("http://sourcemap.local/assets/styles/../images/account-notice.png") 12px 13px no-repeat;
+}
+.user-map-list .map-controls span.map-controls-status.failed {
+  background: url("http://sourcemap.local/assets/styles/../images/account-alert.png") 12px 13px no-repeat;
+}
+.user-map-list .map-controls span.map-controls-status.text {
+  width: 180px;
+  color: #999;
+  font-size: 1em;
+  line-height: 1.5em;
+  background: none;
+  text-align: left;
+  position: relative;
+  left: 4px;
+}
+.user-map-list .map-controls span.map-controls-status.text ul {
+  margin: .75em 0 0 .2em;
+}
+.user-map-list .map-controls span.map-controls-status.text a {
+  color: #4D98CF;
+}
+#search-page .user-map-list .map-description, .user-profile-view .user-map-list .map-description {
+  width: 745px;
+}
+/* Upload image popup ---------------- */
+#popup ul {
+  margin-left: 2em;
+  list-style: square;
+}
+#popup ul li {
+  margin: .7em 0;
+}
+/* Upload image popup ---------------- */
+#upload_content hr {
+  width: 100%;
+}
+.upload_profile_pic, .upload_banner {
+  float: left;
+  height: 100px;
+  width: 500px;
+}
+.upload_profile_pic input[type="file"], .upload_banner input[type="file"] {
+  width: 300px;
+  padding: 0.8em 1em;
+  margin: 10px 0 0 0;
+}
+.upload_profile_pic img, .upload_banner img {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.upload_profile_pic h3,
+.upload_banner h3,
+.upload_profile_pic h4,
+.upload_banner h4 {
+  float: left;
+}
+.upload_profile_pic h4, .upload_banner h4 {
+  margin-top: 7px;
+  margin-left: 10px;
+  color: #999;
+}
+/* Edit map ---------------- */
+#edit-map h1 {
+  margin-bottom: 20px;
+}
+#edit-map .edit-map-form {
+  float: left;
+  width: 550px;
+  padding: 10px;
+  background: #fefefe;
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+#edit-map .edit-map-details {
+  margin-left: 40px;
+  float: left;
+  width: 300px;
+  padding: 10px;
+}
+#edit-map .edit-map-details > div {
+  margin-left: 20px;
+}
+/* Form pages ---------------- */
+div.form-page {
+  margin-top: 20px;
+}
+div.form-page div.copy-section {
+  float: left;
+  width: 505px;
+}
+div.form-page div.copy-section p {
+  font-size: 20px;
+}
+div.form-page div.copy-section ul {
+  list-style: square;
+  margin: 20px 20px 20px 30px;
+}
+div.form-page div.copy-section ul li {
+  margin: 0 0 10px 0;
+}
+div.form-page div.copy-section.register {
+  width: 435px;
+}
+div.form-page div.copy-section.contact {
+  width: 440px;
+}
+div.form-page div.box-section {
+  float: left;
+  width: 405px;
+  margin: -58px 0 0 40px;
+  padding: 4px;
+  background: #fefefe;
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+div.form-page div.box-section.register {
+  width: 460px;
+}
+div.form-page div.box-section.register input[type="checkbox"] {
+  margin: 13px 40px 4px 12px;
+}
+div.form-page div.box-section.contact {
+  width: 460px;
+}
+div.form-page div.box-section.contact textarea {
+  height: 120px;
+}
+div.form-page div.box-section .container {
+  margin: 0 10px;
+  width: auto;
+}
+div.form-page .credit-cards {
+  float: right;
+  width: 405px;
+  height: 50px;
+  background: url('http://sourcemap.local/assets/styles/../images/payment/cards.png') left transparent no-repeat;
+}
+/* List (blog) styles ------------------- */
+#list-overview {
+  width: 1008px;
+  margin: 20px auto 40px auto;
+  border: 1px solid #eee;
+  background: #f5f5f5;
+  padding: 10px 10px 10px 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+#list-overview h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.4em;
+}
+#list-container {
+  width: 1008px;
+  margin: 20px auto;
+}
+#list-container .stop, #list-container .hop {
+  margin: 0 0 20px 0;
+}
+#list-container .stop .title, #list-container .hop .title {
+  border: 1px solid #eee;
+  background: #f5f5f5;
+  padding: 10px 10px 10px 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+#list-container .stop .description, #list-container .hop .description {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  color: #666;
+}
+#list-container .stop .placename, #list-container .hop .placename {
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+}
+#list-container .list-footprint {
+  padding: 0;
+  margin: 0;
+}
+#list-container .list-footprint li {
+  display: inline;
+}
+#list-container .list-footprint li:after {
+  content: ",";
+}
+#list-container .list-footprint li:last-child:after {
+  content: ".";
+}
+#list-container .list-media-items {
+  padding: 0;
+  margin: 0;
+}
+#list-container .list-media-items li {
+  display: inline;
+}
+#list-container .list-media-items li:after {
+  content: ",";
+}
+#list-container .list-media-items li:first-child:before {
+  content: "Media:";
+}
+#list-container .list-media-items li:last-child:after {
+  content: ".";
+}
+#list-container .stop .dot {
+  height: 12px;
+  width: 12px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  border: 4px solid #fff;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+#list-container .stop h2 {
+  position: relative;
+  padding-left: 25px;
+  min-height: 28px;
+}
+/* Goolge Import styles ------------------- */
+table.google-spreadsheets-list {
+  width: 960px;
+  margin: 0 auto;
+}
+table.google-spreadsheets-list tr {
+  padding: 5px;
+}
+table.google-spreadsheets-list td {
+  padding: 5px;
+}
+table.google-spreadsheets-list tr.even {
+  background: #fff;
+}
+table.google-spreadsheets-list th {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+/* Admin styles ------------------- */
+body.admin {
+  background-color: #fff;
+  background-color: #333333;
+  background-image: -moz-linear-gradient(center bottom, #333333 0%, #777777 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #333333), color-stop(1, #777777));
+  color: #ccc;
+}
+body.admin #wrapper {
+  width: 960px;
+  margin: 10px auto;
+}
+body.admin #admin-head {
+  padding: 20px 10px;
+  background: #444;
+  color: #fff;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  -webkit-box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+}
+body.admin #admin-head a {
+  color: #00befa;
+  font-size: 20px;
+  font-weight: bold;
+}
+body.admin label {
+  color: #fff;
+}
+body.admin #header #navigation li a {
+  text-shadow: none;
+}
+body.admin #summary {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2em;
+}
+body.admin .button, body.admin input[type="submit"] {
+  float: none;
+}
+body.admin a {
+  color: #00befa;
+  text-decoration: none;
+}
+body.admin table {
+  width: 100%;
+}
+body.admin table tr {
+  padding: 5px;
+}
+body.admin table td {
+  padding: 5px;
+}
+body.admin table tr.even {
+  background: #333;
+}
+body.admin table th {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+body.admin fieldset {
+  margin: 15px 0;
+  border: 1px solid #999;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+body.admin ol, body.admin ul, body.admin dl {
+  margin-left: 25px;
+}
+body.admin ol {
+  margin: 10px 0 10px 40px;
+}
+body.admin dl dt {
+  font-weight: bold;
+}
+body.admin dl dd {
+  margin-bottom: 20px;
+}
+body.admin input[type="submit"] {
+  padding: .5em 1em;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #f7f7f7;
+  background-color: #fff;
+  background-color: #246587;
+  background-image: -moz-linear-gradient(center bottom, #246587 0%, #50a3ce 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #246587), color-stop(1, #50a3ce));
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+body.admin input[type="submit"] a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+body.admin input[type="submit"]:hover {
+  color: #f7f7f7;
+}
+body.admin .export {
+  float: right;
+}
+/* Info page & API styles -------------------
+ *
+ * TODO: Clean up the following...
+ *
+ * These styles are meant for any of our text-heavy pages.
+ * They should emphasise proper typesetting.
+ *
+ */
+.container.info #document-content {
+  width: 700px;
+}
+.container.info #document-content h1,
+.container.info #document-content h2,
+.container.info #document-content h3,
+.container.info #document-content h4,
+.container.info #document-content h5,
+.container.info #document-content h6 {
+  margin: .4em 0;
+}
+.container.info #document-content p {
+  text-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+}
+.container.info #document-content ul {
+  margin-left: 2em;
+  list-style: square;
+}
+.container.info #document-content ul li {
+  margin: .7em 0;
+}
+.container.info #document-content pre {
+  padding: 1em 2em;
+  margin: 1em 4em;
+  background-color: #fff;
+  background-color: #e1e1e1;
+  background-image: -moz-linear-gradient(center bottom, #e1e1e1 0%, #eeeeee 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e1e1e1), color-stop(1, #eeeeee));
+  white-space: pre-wrap;
+  /* css-3 */
+
+  white-space: -moz-pre-wrap !important;
+  /* Mozilla, since 1999 */
+
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+
+  line-height: 1.5em;
+  border: 1px dashed #ccc;
+}
+.container.info #toc {
+  float: right;
+  font-size: 10pt;
+  width: 200px;
+  padding: 10px 10px 10px 20px;
+  border: solid 1px #ccd136;
+  margin: 0 0 10px 15px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  background-color: #f9f0a9;
+  background-image: -moz-linear-gradient(center bottom, #f9f0a9 0%, #faf6da 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f9f0a9), color-stop(1, #faf6da));
+}
+.container.info #toc li {
+  margin: .5em 0;
+}
+.container.info .toc-top-link {
+  padding: .25em 1em;
+  font-size: .6em;
+}
+.about-sourcemap h1 {
+  margin: 30px 0;
+}
+.about-sourcemap ol {
+  margin: 0 40px;
+}
+.about-sourcemap ol li {
+  margin: 20px 0;
+  line-height: 28px;
+}
+.about-sourcemap p {
+  margin-bottom: 20px;
+}
+/* API Docs ---------------- */
+.classic-list li {
+  list-style-position: inside;
+  list-style-type: upper-alpha;
+}
+.classic-list li ol {
+  margin: .3em;
+  margin-left: .8em;
+}
+.classic-list li ol li {
+  list-style-type: decimal;
+}
+.classic-list li ol li ol li {
+  list-style-type: lower-alpha;
+}
+.codeface {
+  font-family: monospace;
+  background-color: #efefef;
+}
+.code-sample {
+  white-space: pre;
+  font-family: monospace;
+  background-color: #efefef;
+  margin-top: .25em;
+  margin-bottom: .25em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  font-weight: bold;
+}
+.documentation {
+  margin-bottom: 2em;
+}
+.documentation .toc {
+  border: 1px solid #D4C272;
+  padding-left: .2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+}
+.documentation a {
+  color: orange;
+}
+.documentation .section {
+  margin-bottom: 1em;
+}
+.documentation .section h2 {
+  text-align: right;
+  background-color: #efefef;
+  border-bottom: .1em solid #888;
+  color: #bbb;
+  padding-right: .5em;
+  font-size: 2em;
+}
+.documentation .section h3 {
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+.documentation .section h4 {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #D4C272;
+}
+.documentation .section p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+</style><style type="text/css" media="screen" id="less:sites-default-assets-styles-slider">/* AnythingSlider v1.4 By Chris Coyier: http://css-tricks.com */
+/* Copyright (C) Sourcemap 2011
+ * This program is free software: you can redistribute it and/or modify it under the terms
+ * of the GNU Affero General Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License along with this
+ * program. If not, see <http://www.gnu.org/licenses/>.*/
+/*
+ * This is where our mixins live.
+ */
+/* Variables ---------------------- */
+/* Mixins --------------------------*/
+.superscript {
+  color: #328cbb;
+  font-size: .7em;
+}
+.plain_list {
+  list-style: none;
+  margin-left: 0;
+}
+.plain_list li {
+  padding: 0 0 20px;
+}
+.plain_list li img {
+  width: 40px;
+  float: left;
+  padding: 10px 15px 10px 0;
+}
+.plain_list li p {
+  color: #909090;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.editable_list {
+  font-size: 14px;
+  color: #949494;
+}
+.editable_list li {
+  margin: 0 0 8px 0;
+}
+.editable_list li p {
+  font-size: 1em;
+  width: 260px;
+  overflow: hidden;
+}
+.editable_list li p span {
+  color: #328cbb;
+}
+.editable_list li p span.empty {
+  color: #ccc;
+}
+.editable_list li a.edit-button {
+  float: right;
+  margin-right: -24px;
+  height: 24px;
+  width: 24px;
+  background: url('http://sourcemap.local/sites/default/assets/styles/../../../../assets/styles/../images/edit-info.png') 0 -24px no-repeat;
+}
+.editable_list li a.edit-button.enabled {
+  background: url('http://sourcemap.local/sites/default/assets/styles/../../../../assets/styles/../images/edit-info.png') 0 0 no-repeat;
+}
+.box {
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+}
+.box.small {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+/* Functions ---------------------- */
+.clear {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+.center {
+  text-align: center;
+}
+.red {
+  color: red !important;
+}
+/* Debug/Profiler information ---------------- */
+#profiler {
+  margin-top: 10px;
+  display: none;
+}
+.profiler-link {
+  cursor: pointer;
+}
+#featured-slider-description {
+  position: absolute;
+  right: 40px;
+  top: 18px;
+  padding: 20px 67px 20px 30px;
+  width: 304px;
+  height: 240px;
+  background: #318aba url('http://sourcemap.local/sites/default/assets/styles/../images/slider-description-background.png');
+  border-top: 3px #549ec5 solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.featured-description {
+  display: none;
+}
+.anythingWindow img {
+  position: relative;
+}
+.anythingSlider .anythingControls {
+  position: absolute;
+  bottom: 20px;
+  left: 270px;
+  z-index: 100;
+}
+.anythingSlider .featured-title-leader {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0a4e74;
+  text-shadow: rgba(88, 159, 198, 0.3) 0 1px, rgba(0, 0, 0, 0) 0 -2px;
+}
+.anythingSlider .featured-info {
+  position: absolute;
+  bottom: 12px;
+}
+.anythingSlider .featured-info, .anythingSlider .featured-info a {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0a4e74;
+  text-shadow: rgba(88, 159, 198, 0.3) -1px 0, rgba(88, 159, 198, 0.1) 0 -1px, rgba(255, 255, 255, 0.15) 0 1px, rgba(0, 0, 0, 0) -1px -2px;
+}
+.anythingSlider .featured-teaser {
+  color: #0a4e74;
+  text-shadow: rgba(88, 159, 198, 0.3) -1px 0, rgba(88, 159, 198, 0.1) 0 -1px, rgba(255, 255, 255, 0.15) 0 1px, rgba(0, 0, 0, 0) -1px -2px;
+}
+.anythingSlider .featured-title {
+  font-size: 32px;
+  font-weight: bold;
+  height: 2.8em;
+  overflow: hidden;
+}
+.anythingSlider .featured-title-link {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.3) -1px 0, rgba(0, 0, 0, 0.1) 0 -1px, rgba(255, 255, 255, 0.3) 0 1px, rgba(0, 0, 0, 0.1) -1px -2px;
+}
+.anythingSlider .thumbNav {
+  float: right;
+  margin: 0;
+  z-index: 100;
+}
+.anythingSlider .thumbNav li {
+  display: block;
+  padding-right: 20px;
+  float: left;
+}
+.anythingSlider .thumbNav li.last {
+  padding-right: 0;
+}
+.anythingSlider .thumbNav a {
+  display: block;
+  padding: 0;
+  outline: 0;
+  opacity: .8;
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaabad;
+  -webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.anythingSlider .thumbNav a span {
+  display: none;
+}
+.anythingSlider .thumbNav a.cur {
+  opacity: 1;
+  background: #4a99c4;
+  border-color: #2e6683;
+  -webkit-box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.2);
+}
+.anythingSlider {
+  margin: 0 auto;
+}
+.anythingSlider.activeSlider .anythingWindow {
+  border-color: #eaeaea;
+}
+.anythingSlider .anythingControls .start-stop {
+  display: none;
+}
+.anythingSlider .anythingWindow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.anythingSlider {
+  position: relative;
+}
+.anythingBase {
+  background: transparent;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.anythingBase li.panel {
+  background: transparent;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.anythingSlider .arrow {
+  top: 50%;
+  position: absolute;
+  display: block;
+}
+.anythingSlider .arrow a {
+  display: block;
+  height: 120px;
+  margin: -60px 0 0 0;
+  width: 45px;
+  text-align: center;
+  outline: 0;
+  background: url(http://sourcemap.local/sites/default/assets/styles/images/arrows-default.png) no-repeat;
+  text-indent: -9999px;
+}
+.anythingSlider .forward {
+  right: 0;
+}
+.anythingSlider .back {
+  left: 0;
+}
+.anythingSlider .forward a {
+  background-position: 0 -40px;
+}
+.anythingSlider .back a {
+  background-position: -88px -40px;
+}
+.anythingSlider .forward a:hover, div.anythingSlider .forward a.hover {
+  background-position: 0 -240px;
+}
+.anythingSlider .back a:hover, div.anythingSlider .back a.hover {
+  background-position: -88px -240px;
+}
+.anythingSlider .anythingControls {
+  outline: 0;
+}
+.anythingSlider .thumbNav {
+  margin: 0;
+}
+.anythingSlider .thumbNav li {
+  display: inline;
+}
+.anythingSlider .thumbNav a:hover {
+  background-image: none;
+}
+.anythingSlider.rtl .thumbNav a {
+  float: right;
+}
+.anythingSlider.rtl .thumbNav {
+  float: left;
+}
+.anythingSlider .start-stop {
+  padding: 2px 5px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  z-index: 100;
+  outline: 0;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+.anythingSlider .start-stop:hover, .anythingSlider .start-stop.hover {
+  background-image: none;
+}
+.anythingSlider,
+.anythingSlider .anythingWindow,
+.anythingSlider .thumbNav a,
+.anythingSlider .arrow a,
+.anythingSlider .start-stop {
+  transition-duration: 0;
+  -o-transition-duration: 0;
+  -moz-transition-duration: 0;
+  -webkit-transition-duration: 0;
+}
+</style></head>
+<body class="main">
+    <div id="wrapper">
+                    
+
+
+<div class="container full">
+    <div class="messages">
+        <div class="status-wrap">
+            <ul class="status-messages announcements">
+                            </ul>
+        </div>
+    </div>
+</div>
+                
+<div class="container">
+    <div id="header">
+        <div id="logo">
+            <a name="home" href="">        
+                <h1 id="site-title">Sourcemap</h1>
+                <img src="./sourcemaphomepage_files/logo.png" alt="sourcemap">
+            </a>
+        </div>
+        <ul id="navigation">
+            <li> <a href="http://sourcemap.local/browse">Browse</a> </li>
+            <li> <a href="http://sourcemap.local/create">Create</a> </li>
+                         
+            <li>
+                <div> <a href="http://sourcemap.local/home">Dashboard</a><a class="upgrade-text" href="http://sourcemap.local/upgrade">Go&nbsp;Pro!</a></div> 
+                <a id="existing-login" href="http://sourcemap.local/auth/logout">Sign out</a>
+            </li>
+                    </ul>
+        <form action="http://sourcemap.local/search">
+            <div id="search-div" class="pseudo-form">
+                <input id="search" name="sq" placeholder="Search" value="" results="0" autocomplete="off">
+            </div>
+        </form>
+        <div id="search-results">
+            <ul id="live-search-results">
+                <script type="text/javascript" async="" src="./sourcemaphomepage_files/ga.js"></script><script type="text/html" id="search-result-template"> 
+                    <![CDATA[
+                        <li>
+                            <div class="preview-map-item vertical">
+                                <a class="search-link" href="view/<%= this.id %>"></a>
+                                <div class="preview-badge">
+                                    <img class="preview-map thumb" src="static/<%= this.id %>.s.png" alt="" />
+                                </div>
+                                <h3 class="preview-title list">
+                                    <a><%= this.title %></a>
+                                </h3>
+                                <div>
+                                    <h4 class="preview-author">
+                                        <a href="user/<%= this.author %>">
+                                            <%= this.author %>, <%= this.date %>
+                                     </h4>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                    ]]>
+                </script>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>    
+</div>    
+                
+        
+<div class="container slider">
+    <div id="sliderwrap">
+        <div id="slider">
+            
+<div class="anythingSlider anythingSlider-default activeSlider" style="width: 1040px; height: 322px; "><div class="anythingWindow"><ul id="featured-slider" class="anythingBase" style="width: 8320px; left: -3120px; "><li class="featured-item cloned panel" style="width: 1040px; height: 322px; ">
+        <div class="featured-content">
+            <a href="http://sourcemap.local/view/8" disabled="disabled">
+                <img class="featured-preview-map large" src="./sourcemaphomepage_files/8.l.png" alt="">
+            </a>
+        </div>
+        <div class="featured-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/8" disabled="disabled" style="">test long title test long title test long title test lo</a>
+                </h1>
+                                                        <h3 class="featured-teaser"></h3>            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/administrator" disabled="disabled">
+                administrator</a>,   
+                
+    Jul 20, 2011            </h4>
+            
+        </div>
+    </li>
+    <li class="featured-item panel" style="width: 1040px; height: 322px; ">
+        <div class="featured-content">
+            <a href="http://sourcemap.local/view/230">
+                <img class="featured-preview-map large" src="./sourcemaphomepage_files/230.l.png" alt="">
+            </a>
+        </div>
+        <div id="featured-description-0" class="featured-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/230" style="">Deloitte Suppliers</a>
+                </h1>
+                                                        <h3 class="featured-teaser"></h3>            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/administrator">
+                administrator</a>,   
+                
+    Apr 26, 2012            </h4>
+            
+        </div>
+    </li>
+        <li class="featured-item panel" style="width: 1040px; height: 322px; ">
+        <div class="featured-content">
+            <a href="http://sourcemap.local/view/1">
+                <img class="featured-preview-map large" src="./sourcemaphomepage_files/1.l.png" alt="">
+            </a>
+        </div>
+        <div id="featured-description-1" class="featured-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/1" style="">An Unnamed Sourcemap</a>
+                </h1>
+                            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/None">
+                None</a>,   
+                
+    May 26, 2011            </h4>
+            
+        </div>
+    </li>
+        <li class="featured-item panel activePage" style="width: 1040px; height: 322px; ">
+        <div class="featured-content">
+            <a href="http://sourcemap.local/view/5">
+                <img class="featured-preview-map large" src="./sourcemaphomepage_files/5.l.png" alt="">
+            </a>
+        </div>
+        <div id="featured-description-2" class="featured-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/5" style="">An Unnamed Sourcemap</a>
+                </h1>
+                            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/None">
+                None</a>,   
+                
+    Jul 5, 2011            </h4>
+            
+        </div>
+    </li>
+        <li class="featured-item panel" style="width: 1040px; height: 322px; ">
+        <div class="featured-content">
+            <a href="http://sourcemap.local/view/6">
+                <img class="featured-preview-map large" src="./sourcemaphomepage_files/6.l.png" alt="">
+            </a>
+        </div>
+        <div id="featured-description-3" class="featured-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/6" style="">sdf</a>
+                </h1>
+                            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/administrator">
+                administrator</a>,   
+                
+    Jul 6, 2011            </h4>
+            
+        </div>
+    </li>
+        <li class="featured-item panel" style="width: 1040px; height: 322px; ">
+        <div class="featured-content">
+            <a href="http://sourcemap.local/view/7">
+                <img class="featured-preview-map large" src="./sourcemaphomepage_files/7.l.png" alt="">
+            </a>
+        </div>
+        <div id="featured-description-4" class="featured-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/7" style="">An Unnamed Sourcemap</a>
+                </h1>
+                            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/None">
+                None</a>,   
+                
+    Jul 20, 2011            </h4>
+            
+        </div>
+    </li>
+        <li class="featured-item panel" style="width: 1040px; height: 322px; ">
+        <div class="featured-content">
+            <a href="http://sourcemap.local/view/8">
+                <img class="featured-preview-map large" src="./sourcemaphomepage_files/8.l.png" alt="">
+            </a>
+        </div>
+        <div id="featured-description-5" class="featured-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/8" style="">test long title test long title test long title test lo</a>
+                </h1>
+                                                        <h3 class="featured-teaser"></h3>            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/administrator">
+                administrator</a>,   
+                
+    Jul 20, 2011            </h4>
+            
+        </div>
+    </li>
+    <li class="featured-item cloned panel" style="width: 1040px; height: 322px; ">
+        <div class="featured-content">
+            <a href="http://sourcemap.local/view/230" disabled="disabled">
+                <img class="featured-preview-map large" src="./sourcemaphomepage_files/230.l.png" alt="">
+            </a>
+        </div>
+        <div class="featured-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/230" disabled="disabled" style="">Deloitte Suppliers</a>
+                </h1>
+                                                        <h3 class="featured-teaser"></h3>            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/administrator" disabled="disabled">
+                administrator</a>,   
+                
+    Apr 26, 2012            </h4>
+            
+        </div>
+    </li></ul><div id="featured-slider-description">
+                <h1 class="featured-title" style="">
+                    <a class="featured-title-link" href="http://sourcemap.local/view/5" style="">An Unnamed Sourcemap</a>
+                </h1>
+                            <h4 class="featured-info">
+                                                <a href="http://sourcemap.local/user/None">
+                None</a>,   
+                
+    Jul 5, 2011            </h4>
+            
+        </div></div><div class="anythingControls" style=""><a href="http://sourcemap.local/#" class="start-stop playing"><span>Stop</span></a><ul class="thumbNav" style=""><li class="first"><a href="http://sourcemap.local/#" class="panel1"><span>1</span></a></li><li class=""><a href="http://sourcemap.local/#" class="panel2"><span>2</span></a></li><li class=""><a href="http://sourcemap.local/#" class="panel3 cur"><span>3</span></a></li><li class=""><a href="http://sourcemap.local/#" class="panel4"><span>4</span></a></li><li class=""><a href="http://sourcemap.local/#" class="panel5"><span>5</span></a></li><li class="last"><a href="http://sourcemap.local/#" class="panel6"><span>6</span></a></li></ul></div></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="sidebar" class="welcome">
+        <div class="container"> 
+    		<h2 class="section-title">Popular</h2>  
+            <div class="preview-map-section">
+                
+            <div class="preview-map-item small">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/230"><img class="preview-map" src="./sourcemaphomepage_files/230.s.png" alt=""></a>
+            </div>
+            <h4 class="preview-title vertical">
+                <a class="truncate" href="http://sourcemap.local/view/230">Deloitte Suppliers</a>
+            </h4>
+            <div>
+                <h4 class="preview-author">
+                                        <a href="http://sourcemap.local/user/administrator">administrator</a>, 
+                    
+    Apr 26, 2012                </h4>
+               
+            </div>
+        </div>
+                    <div class="preview-map-item small last">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/1"><img class="preview-map" src="./sourcemaphomepage_files/1.s.png" alt=""></a>
+            </div>
+            <h4 class="preview-title vertical">
+                <a class="truncate" href="http://sourcemap.local/view/1">Untitled Map</a>
+            </h4>
+            <div>
+                <h4 class="preview-author">
+                                        <a href="http://sourcemap.local/user/None">None</a>, 
+                    
+    May 26, 2011                </h4>
+               
+            </div>
+        </div>
+                    <div class="preview-map-item small">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/5"><img class="preview-map" src="./sourcemaphomepage_files/5.s.png" alt=""></a>
+            </div>
+            <h4 class="preview-title vertical">
+                <a class="truncate" href="http://sourcemap.local/view/5">Untitled Map</a>
+            </h4>
+            <div>
+                <h4 class="preview-author">
+                                        <a href="http://sourcemap.local/user/None">None</a>, 
+                    
+    Jul 5, 2011                </h4>
+               
+            </div>
+        </div>
+                    <div class="preview-map-item small last">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/6"><img class="preview-map" src="./sourcemaphomepage_files/6.s.png" alt=""></a>
+            </div>
+            <h4 class="preview-title vertical">
+                <a class="truncate" href="http://sourcemap.local/view/6">sdf</a>
+            </h4>
+            <div>
+                <h4 class="preview-author">
+                                        <a href="http://sourcemap.local/user/administrator">administrator</a>, 
+                    
+    Jul 6, 2011                </h4>
+               
+            </div>
+        </div>
+                        </div>
+            <div class="clear"></div>
+        </div>           
+
+        <div class="container"> 
+    		<h2 class="section-title">Recent</h2> 
+            <div class="preview-map-section">
+                
+            <div class="preview-map-item small">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/230"><img class="preview-map" src="./sourcemaphomepage_files/230.s.png" alt=""></a>
+            </div>
+            <h4 class="preview-title vertical">
+                <a class="truncate" href="http://sourcemap.local/view/230">Deloitte Suppliers</a>
+            </h4>
+            <div>
+                <h4 class="preview-author">
+                                        <a href="http://sourcemap.local/user/administrator">administrator</a>, 
+                    
+    Apr 26, 2012                </h4>
+               
+            </div>
+        </div>
+                    <div class="preview-map-item small last">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/1"><img class="preview-map" src="./sourcemaphomepage_files/1.s.png" alt=""></a>
+            </div>
+            <h4 class="preview-title vertical">
+                <a class="truncate" href="http://sourcemap.local/view/1">Untitled Map</a>
+            </h4>
+            <div>
+                <h4 class="preview-author">
+                                        <a href="http://sourcemap.local/user/None">None</a>, 
+                    
+    May 26, 2011                </h4>
+               
+            </div>
+        </div>
+                    <div class="preview-map-item small">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/5"><img class="preview-map" src="./sourcemaphomepage_files/5.s.png" alt=""></a>
+            </div>
+            <h4 class="preview-title vertical">
+                <a class="truncate" href="http://sourcemap.local/view/5">Untitled Map</a>
+            </h4>
+            <div>
+                <h4 class="preview-author">
+                                        <a href="http://sourcemap.local/user/None">None</a>, 
+                    
+    Jul 5, 2011                </h4>
+               
+            </div>
+        </div>
+                    <div class="preview-map-item small last">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/6"><img class="preview-map" src="./sourcemaphomepage_files/6.s.png" alt=""></a>
+            </div>
+            <h4 class="preview-title vertical">
+                <a class="truncate" href="http://sourcemap.local/view/6">sdf</a>
+            </h4>
+            <div>
+                <h4 class="preview-author">
+                                        <a href="http://sourcemap.local/user/administrator">administrator</a>, 
+                    
+    Jul 6, 2011                </h4>
+               
+            </div>
+        </div>
+                    </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="main" class="sidebar">
+        <div class="container primary">
+            <h1 id="site-tagline">Find out where things come from.</h1>
+            <p id="site-blurb">Sourcemap is the open directory of supply chains. <br><a href="http://www.sourcemap.com/register/">Join us</a> to learn more and contribute.</p>  
+
+            <hr class="spacer">
+            
+            <h2 class="section-title">Featured</h2>
+            
+<div id="popular-maps">
+            <div class="preview-map-item medium">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/230"><img class="preview-map" src="./sourcemaphomepage_files/230.m.png" alt=""></a>
+            </div>
+            <h3 class="preview-title featured">
+                <a class="truncate" href="http://sourcemap.local/view/230">
+                    Deloitte Suppliers                   
+                </a></h3>
+            <h4 class="preview-author">
+                                <a href="http://sourcemap.local/user/administrator">administrator</a>,
+                
+    Apr 26, 2012            </h4>
+            
+        </div>
+                    <div class="preview-map-item medium last">
+            <div class="preview-badge">
+            <a href="http://sourcemap.local/view/1"><img class="preview-map" src="./sourcemaphomepage_files/1.m.png" alt=""></a>
+            </div>
+            <h3 class="preview-title featured">
+                <a class="truncate" href="http://sourcemap.local/view/1">
+                    Untitled Map                   
+                </a></h3>
+            <h4 class="preview-author">
+                                <a href="http://sourcemap.local/user/none">none</a>,
+                
+    May 26, 2011            </h4>
+            
+        </div>
+            </div>
+            <div class="clear"></div>
+            <hr class="spacer">
+            
+        </div>
+                        <div class="container secondary"> 
+            <hr class="spacer">
+            <ul>
+                                                <li class="news-item">
+                    <h5 class="title"><a href="http://blog.sourcemap.com/">America's Most Promising Entrepreneurs 2012</a></h5>
+                    <h5 class="date"> June 28, 2012</h5>
+                    <div class="clear"></div>
+                    <p>
+                        <span class="truncate" title="We&#39;re honored to be included in &quot;America&#39;s Most Promising Social Entrepreneurs 2012&quot; by Bloomberg Businessweek and to be surrounded by so many friends. Check out the article and vote for your favorite!…">We're honored to be included in "America's Most Promising Social Entrepreneurs 2012" by Bloomberg Businessweek and to be surrounded by so many friends. Check out th...</span>
+                        <a class="readmore" href="http://blog.sourcemap.com/2012/06/americas-most-promising-entrepreneurs-2012/">More »</a>
+                    </p>
+                </li>
+                                                <li class="news-item">
+                    <h5 class="title"><a href="http://blog.sourcemap.com/">Introducing Sourcemap 1.2: Messaging and E-mail notifications</a></h5>
+                    <h5 class="date"> April 03, 2012</h5>
+                    <div class="clear"></div>
+                    <p>
+                        <span class="truncate" title="Version 1.2 brings a host of improvements to our social functionality, as well as enhancements to our UI. New Features Private messaging &amp;#8211; By popular demand!  You can now message other users directly from your Sourcemap.com account. E-mail …">Version&nbsp;1.2&nbsp;brings a host of improvements to our social functionality, as well as enhancements to our UI. New Features Private messaging&nbsp;&amp;#8211;&nbsp;By popular dema...</span>
+                        <a class="readmore" href="http://blog.sourcemap.com/2012/04/introducing-sourcemap-1-2-messaging-e-mail-notifications/">More »</a>
+                    </p>
+                </li>
+                                                <li class="news-item">
+                    <h5 class="title"><a href="http://blog.sourcemap.com/">Introducing Sourcemap 1.1: Water + Energy Footprints, Searchable Maps, Pro Accounts and more!</a></h5>
+                    <h5 class="date"> February 28, 2012</h5>
+                    <div class="clear"></div>
+                    <p>
+                        <span class="truncate" title="I&#39;m proud to announce a new round of improvements to Sourcemap.com! New Features Pro Accounts Support Sourcemap! Pro Accounts will give you a custom url and dashboard as well as the ability to create private and password-shared maps. Pro members wil…">I'm proud to announce a new round of improvements to Sourcemap.com! New Features Pro Accounts Support Sourcemap! Pro Accounts will give you a custom url and dash...</span>
+                        <a class="readmore" href="http://blog.sourcemap.com/2012/02/introducing-sourcemap-1-1-water-energy-footprints-searchable-maps-pro-accounts-and-more/">More »</a>
+                    </p>
+                </li>
+                            </ul>
+        </div>
+            </div>
+    <div class="clear"></div>
+</div>
+        <div class="push"></div>
+    </div><!-- #wrapper -->
+    <div id="footer">
+         
+<div class="clear"></div>
+<div class="container">
+    <ul>
+        <li><a href="http://blog.sourcemap.com/">Blog</a></li> 
+        <li><a href="http://sourcemap.local/info/about">About</a></li><li><a href="http://sourcemap.local/info/dmca">DMCA</a></li><li><a href="http://sourcemap.local/info/api-docs">API</a></li><li><a href="http://sourcemap.local/info/terms">Terms of Service</a></li><li><a href="http://sourcemap.local/info/privacy">Privacy Policy</a></li><li><a href="http://sourcemap.local/info/jobs">Jobs</a></li><li><a href="http://sourcemap.local/info/press">Press</a></li><li><a href="http://sourcemap.local/info/instructions">Instructions</a></li>    	<li><a href="http://sourcemap.local/contact">Contact us</a></li>
+    </ul>
+    <div class="clear"></div>
+    <p>© 2012 Sourcemap Inc. 
+        min 0.150002 <abbr title="seconds">s</abbr>&nbsp;&nbsp;max 10.281965 <abbr title="seconds">s</abbr>&nbsp;&nbsp;average 2.099129 <abbr title="seconds">s</abbr>&nbsp;&nbsp;current 0.311127 <abbr title="seconds">s</abbr>&nbsp;&nbsp;</p>
+    <a href="http://www.ecolabelindex.com/ecolabel/sourcemap"><div class="logo_ecolabel"></div></a>
+    <a href="http://www.bcorporation.net/sourcemap"><div class="logo_bcorp"></div></a>
+</div>
+<div class="clear"></div>
+    </div>
+    
+    <div id="profiler">
+<style type="text/css">
+.kohana table.profiler { width: 99%; margin: 0 auto 1em; border-collapse: collapse; }
+.kohana table.profiler th,
+.kohana table.profiler td { padding: 0.2em 0.4em; background: #fff; border: solid 1px #999; border-width: 1px 0; text-align: left; font-weight: normal; font-size: 1em; color: #111; vertical-align: top; text-align: right; }
+.kohana table.profiler th.name { text-align: left; }
+.kohana table.profiler tr.group th { font-size: 1.4em; background: #222; color: #eee; border-color: #222; }
+.kohana table.profiler tr.group td { background: #222; color: #777; border-color: #222; }
+.kohana table.profiler tr.group td.time { padding-bottom: 0; }
+.kohana table.profiler tr.headers th { text-transform: lowercase; font-variant: small-caps; background: #ddd; color: #777; }
+.kohana table.profiler tr.mark th.name { width: 40%; font-size: 1.2em; background: #fff; vertical-align: middle; }
+.kohana table.profiler tr.mark td { padding: 0; }
+.kohana table.profiler tr.mark.final td { padding: 0.2em 0.4em; }
+.kohana table.profiler tr.mark td > div { position: relative; padding: 0.2em 0.4em; }
+.kohana table.profiler tr.mark td div.value { position: relative; z-index: 2; }
+.kohana table.profiler tr.mark td div.graph { position: absolute; top: 0; bottom: 0; right: 0; left: 100%; background: #71bdf0; z-index: 1; }
+.kohana table.profiler tr.mark.memory td div.graph { background: #acd4f0; }
+.kohana table.profiler tr.mark td.current { background: #eddecc; }
+.kohana table.profiler tr.mark td.min { background: #d2f1cb; }
+.kohana table.profiler tr.mark td.max { background: #ead3cb; }
+.kohana table.profiler tr.mark td.average { background: #ddd; }
+.kohana table.profiler tr.mark td.total { background: #d0e3f0; }
+.kohana table.profiler tr.time td { border-bottom: 0; font-weight: bold; }
+.kohana table.profiler tr.memory td { border-top: 0; }
+.kohana table.profiler tr.final th.name { background: #222; color: #fff; }
+.kohana table.profiler abbr { border: 0; color: #777; font-weight: normal; }
+.kohana table.profiler:hover tr.group td { color: #ccc; }
+.kohana table.profiler:hover tr.mark td div.graph { background: #1197f0; }
+.kohana table.profiler:hover tr.mark.memory td div.graph { background: #7cc1f0; }</style>
+
+
+<div class="kohana">
+		<table class="profiler">
+		<tbody><tr class="group">
+			<th class="name" rowspan="2">Requests</th>
+			<td class="time" colspan="4">0.233962 <abbr title="seconds">s</abbr></td>
+		</tr>
+		<tr class="group">
+			<td class="memory" colspan="4">1,858.1758 <abbr title="kilobyte">kB</abbr></td>
+		</tr>
+		<tr class="headers">
+			<th class="name">Benchmark</th>
+						<th class="min">Min</th>
+						<th class="max">Max</th>
+						<th class="average">Average</th>
+						<th class="total">Total</th>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">"" (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.233962 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.233962 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.233962 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.233962 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 0%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1,858.1758 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1,858.1758 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1,858.1758 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1,858.1758 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 0%"></div>
+									</div>
+			</td>
+					</tr>
+			</tbody></table>
+		<table class="profiler">
+		<tbody><tr class="group">
+			<th class="name" rowspan="2">Kohana</th>
+			<td class="time" colspan="4">0.008632 <abbr title="seconds">s</abbr></td>
+		</tr>
+		<tr class="group">
+			<td class="memory" colspan="4">74.3789 <abbr title="kilobyte">kB</abbr></td>
+		</tr>
+		<tr class="headers">
+			<th class="name">Benchmark</th>
+						<th class="min">Min</th>
+						<th class="max">Max</th>
+						<th class="average">Average</th>
+						<th class="total">Total</th>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">find_file (124)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.000020 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.000438 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.000070 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.008632 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 0%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">0.4023 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">2.1602 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.5998 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">74.3789 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 0%"></div>
+									</div>
+			</td>
+					</tr>
+			</tbody></table>
+		<table class="profiler">
+		<tbody><tr class="group">
+			<th class="name" rowspan="2">Database (default)</th>
+			<td class="time" colspan="4">0.033810 <abbr title="seconds">s</abbr></td>
+		</tr>
+		<tr class="group">
+			<td class="memory" colspan="4">17.2422 <abbr title="kilobyte">kB</abbr></td>
+		</tr>
+		<tr class="headers">
+			<th class="name">Benchmark</th>
+						<th class="min">Min</th>
+						<th class="max">Max</th>
+						<th class="average">Average</th>
+						<th class="total">Total</th>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT column_name as name FROM information_schema.columns WHERE table_name = 'role' order by column_name (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.012831 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.012831 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.012831 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.012831 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 0%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.6367 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.6367 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.6367 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.6367 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 40.31339031339%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT "role".* FROM "role" WHERE "name" = 'admin' ORDER BY "role"."id" ASC LIMIT 1 (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.001987 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.001987 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.001987 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.001987 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 84.514186966944%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.5938 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.5938 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.5938 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.5938 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 41.880341880342%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT "contents" AS "contents" FROM "sessions" WHERE "session_id" = '4ff1f60e935810-66444005' LIMIT 1 (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.001523 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.001523 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.001523 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.001523 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 88.1301447498%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.5156 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.5156 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.5156 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.5156 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 44.729344729345%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT column_name as name FROM information_schema.columns WHERE table_name = 'user' order by column_name (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.005648 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.005648 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.005648 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.005648 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 55.982310422357%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.5234 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.5234 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.5234 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.5234 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 44.444444444444%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT "user".* FROM "user" WHERE "user"."id" = 78 ORDER BY "user"."id" ASC LIMIT 1 (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.001510 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.001510 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.001510 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.001510 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 88.230484791051%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">2.7422 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">2.7422 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">2.7422 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">2.7422 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 0%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT COUNT(*) AS "records_found" FROM "user_role" WHERE "user_id" = 78 AND "role_id" = 2 (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.001553 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.001553 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.001553 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.001553 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 87.896017986881%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.7344 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.7344 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.7344 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.7344 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 36.752136752137%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT column_name as name FROM information_schema.columns WHERE table_name = 'user_event' order by column_name (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.004559 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.004559 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.004559 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.004559 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 64.468476503707%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.5352 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.5352 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.5352 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.5352 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 44.017094017094%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT "user_event".* FROM "user_event" WHERE ("scope" = 4 AND "event" = 64) ORDER BY "timestamp" DESC (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.002104 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.002104 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.002104 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.002104 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 83.601835851125%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.8672 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.8672 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.8672 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.8672 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 31.908831908832%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT "role".* FROM "role" WHERE "name" = 'channel' ORDER BY "role"."id" ASC LIMIT 1 (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.001064 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.001064 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.001064 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.001064 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 91.708939554416%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.6055 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.6055 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.6055 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.6055 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 41.452991452991%"></div>
+									</div>
+			</td>
+					</tr>
+				<tr class="mark time">
+						<th class="name" rowspan="2" scope="rowgroup">SELECT COUNT(*) AS "records_found" FROM "user_role" WHERE "user_id" = 78 AND "role_id" = 18 (1)</th>
+						<td class="min">
+				<div>
+					<div class="value">0.001031 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">0.001031 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">0.001031 <abbr title="seconds">s</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">0.001031 <abbr title="seconds">s</abbr></div>
+											<div class="graph" style="left: 91.963505955367%"></div>
+									</div>
+			</td>
+					</tr>
+		<tr class="mark memory">
+						<td class="min">
+				<div>
+					<div class="value">1.4883 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="max">
+				<div>
+					<div class="value">1.4883 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="average">
+				<div>
+					<div class="value">1.4883 <abbr title="kilobyte">kB</abbr></div>
+									</div>
+			</td>
+						<td class="total">
+				<div>
+					<div class="value">1.4883 <abbr title="kilobyte">kB</abbr></div>
+											<div class="graph" style="left: 45.726495726496%"></div>
+									</div>
+			</td>
+					</tr>
+			</tbody></table>
+	
+	<table class="profiler">
+				<tbody><tr class="final mark time">
+			<th class="name" rowspan="2" scope="rowgroup">Application Execution (90)</th>
+						<td class="min">0.150002 <abbr title="seconds">s</abbr></td>
+						<td class="max">10.281965 <abbr title="seconds">s</abbr></td>
+						<td class="average">2.099129 <abbr title="seconds">s</abbr></td>
+						<td class="current">0.311127 <abbr title="seconds">s</abbr></td>
+					</tr>
+		<tr class="final mark memory">
+						<td class="min">6,037.4023 <abbr title="kilobyte">kB</abbr></td>
+						<td class="max">8,984.2734 <abbr title="kilobyte">kB</abbr></td>
+						<td class="average">7,145.8821 <abbr title="kilobyte">kB</abbr></td>
+						<td class="current">6,774.5078 <abbr title="kilobyte">kB</abbr></td>
+					</tr>
+	</tbody></table>
+</div></div>   
+    <script type="text/javascript" src="./sourcemaphomepage_files/showdown.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/analytics.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/jquery.min.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/jquery.jqote.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/search.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/sourcemap.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/supplychain.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/graph.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/less.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/form.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/effects.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/tokenizer.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/jquery.min.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/jquery.jqote.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/anythingslider.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/easing.1.2.js"></script>
+<script type="text/javascript" src="./sourcemaphomepage_files/welcome.js"></script>    <script>Sourcemap.params = {};</script>
+
+
+
+</body></html>
